@@ -11,61 +11,32 @@
 
 <body>
 
+    
     <header class="jumbotron jumbotron-fluid">
-
-        <div class="container">
-
-            <h1 class="h1 text-center">Weather Dashboard</h1>
-
-        </div>
-
+        
+        <h1 class="h1 text-center">Weather Dashboard</h1>
+        
     </header>
+    
+    <main class="container-fluid">
 
-    <div class="container ml-2 d-inline-flex w-25" style="height: 100px">
+        <aside class="row" style="height: 100px">
 
-        <div class="row">
+            <div class="col-4">
 
-            <h2 class="h2 ml-3">Search for a City:</h2>
+                <h2 class="h2 row mx-4">Search for a City:</h2>
 
-            <input class="input-group-text w-100" type="search" name="citysrh" id="citysrh">
+                <input class="input-group-text w-100" type="search" name="citySrh" id="citySrh">
 
-            <button type="button" class="btn btn-primary btn-lg btn-block mt-2">Search</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block mt-2" id="srhBtn">Search</button>
 
-        </div>
+                <div class="list-group row" id="pastSearch"></div>
 
-    </div>
+            </div>
 
-    <div class="container d-flex justify-content-center align-items-start">
+        </aside>
 
-        <div class="row m-2">
-
-            <h2 class="h2 col-4.offset-4"></h2>
-
-            <ul></ul>
-
-        </div>
-
-    </div>
-
-    <div class="container d-flex justify-content-center align-items-end">
-
-        <div class="row m-2">
-
-            <h3 class="h3 col-4.offset-4">5-Day Forcast:</h3>
-            
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-
-        </div>
-
-    </div>
-
-
-
-
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
