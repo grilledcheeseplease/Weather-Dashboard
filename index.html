@@ -13,7 +13,7 @@
 <body>
 
 
-    <header class="jumbotron jumbotron-fluid">
+    <header class="border border-white rounded border-4" style="background-color:rgb(46, 117, 248);">
 
         <h1 class="h1 text-center">Weather Dashboard</h1>
 
@@ -23,9 +23,9 @@
 
         <aside class="row" style="height: 100px">
 
-            <div class="col-4">
+            <div class="col-3">
 
-                <h2 class="h2 row mx-4">Search for a City:</h2>
+                <h2 class="h2 row mx-4" style="font-size: 27px;">Search for a City:</h2>
 
                 <input class="input-group-text w-100" type="search" name="citySrh" id="citySrh">
 
@@ -43,11 +43,11 @@
 
         </aside>
 
-        <section class="row">
+        <section class="row" id="todayDiv">
 
-            <div class="d-flex justify-content-center">
+            <div class="d-flex">
 
-                <h2 id="currentHeader" class="">test</h2>
+                <h2 id="currentHeader" class=""></h2>
 
                 <div id="currentWeather"></div>
 
@@ -57,9 +57,9 @@
 
         <section class="row">
 
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center" id="fiveDay">
 
-                <h2>5 Day Forecast</h2>
+                <h2></h2>
 
                 <section id="listGroup" class="d-flex"></section>
 
