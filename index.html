@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Weather Dashboard</title>
 </head>
 
 <body>
 
-    
+
     <header class="jumbotron jumbotron-fluid">
-        
+
         <h1 class="h1 text-center">Weather Dashboard</h1>
-        
+
     </header>
-    
+
     <main class="container-fluid">
 
         <aside class="row" style="height: 100px">
@@ -30,11 +31,11 @@
 
                 <button type="button" class="btn btn-primary btn-lg btn-block mt-2" id="srhBtn">Search</button>
 
-                <div class="list-group row">
+                <div class="list-group row mx-4">
 
-                    <ul id="pastSearch">
+                    <div id="pastSearch">
 
-                    </ul>
+                    </div>
 
                 </div>
 
@@ -42,21 +43,29 @@
 
         </aside>
 
-        <div>
+        <section class="row">
 
-            <h2 id="currentHeader"></h2>
+            <div class="d-flex justify-content-center">
 
-            <ul id="currentWeather"></ul>
-        
-        </div>
+                <h2 id="currentHeader" class="">test</h2>
 
-        <div>
+                <div id="currentWeather"></div>
 
-            <h2>5 Day Forecast</h2>
+            </div>
 
-            <ul id="listGroup"></ul>
+        </section>
 
-        </div>
+        <section class="row">
+
+            <div class="d-flex justify-content-center">
+
+                <h2>5 Day Forecast</h2>
+
+                <section id="listGroup" class="d-flex"></section>
+
+            </div>
+
+        </section>
 
     </main>
 
