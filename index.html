@@ -12,7 +12,6 @@
 
 <body>
 
-
     <header class="border border-white rounded border-4" style="background-color:rgb(46, 117, 248);">
 
         <h1 class="h1 text-center">Weather Dashboard</h1>
@@ -23,9 +22,9 @@
 
         <aside class="row" style="height: 100px">
 
-            <div class="col-3">
+            <div class="col-2">
 
-                <h2 class="h2 row mx-4" style="font-size: 27px;">Search for a City:</h2>
+                <h2 class="h2 row mx-4" style="font-size: 20px;">Search for a City:</h2>
 
                 <input class="input-group-text w-100" type="search" name="citySrh" id="citySrh">
 
@@ -43,25 +42,23 @@
 
         </aside>
 
-        <section class="row" id="todayDiv">
+        <section class="row d-flex" id="todayDiv">
 
-            <div class="d-flex">
+            <div>
 
                 <h2 id="currentHeader" class=""></h2>
-
+               
                 <div id="currentWeather"></div>
 
             </div>
 
         </section>
 
-        <section class="row">
+        <section class="row text-center" id="dailySection">
 
-            <div class="d-flex justify-content-center" id="fiveDay">
+            <div class="d-flex col-8 px-md-5" id="fiveDay">
 
-                <h2></h2>
-
-                <section id="listGroup" class="d-flex"></section>
+                <section id="listGroup" class="d-flex col"></section>
 
             </div>
 
@@ -69,6 +66,7 @@
 
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>

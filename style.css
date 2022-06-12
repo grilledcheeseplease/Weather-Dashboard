@@ -8,16 +8,18 @@ body {
     background-image: url('images/headerpic.webp');
     background-repeat: no-repeat;
     background-size:cover;
-    overflow-x: hidden;
+    overflow-x:hidden;
+    overflow-y: hidden;
 }
 
 #todayDiv {
     position: relative;
-    left: 400px;
+    left: 245px;
     top:-100px;
 }
 
 #fiveDay {
     position: relative;
-    left: 400px;
+    left: 520px;
+    bottom: 475px;
 }
